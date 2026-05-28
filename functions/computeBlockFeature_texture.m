@@ -21,6 +21,8 @@ function blockFeature = computeBlockFeature_texture(block)
     Gx = imfilter(Y, hx, 'replicate', 'same');
     Gy = imfilter(Y, hy, 'replicate', 'same');
     Gmag = sqrt(Gx.^2 + Gy.^2);
-
-    blockFeature = [meanR meanG meanB mean(Gmag(:)) std(Gmag(:))]./4;
+    
+    meanGrad = mean(Gmag(:)) / 4;
+    stdGrad  = std(Gmag(:)) / 4;
+    blockFeature = [meanR, meanG, meanB, meanGrad, stdGrad];
 end
