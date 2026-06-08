@@ -14,10 +14,8 @@ Due to archive size limitations for submission, large dataset folders (such as C
 
 
 ├── IMPROJECT_MOSAIC/
-│   ├── datasets/               # Target directory for image datasets (e.g., Flowers)
 │   ├── docs/                   # Documentation
 │   ├── functions/              # Contains processing and descriptor functions (.m)
-│   ├── results/                # Saved output mosaics and quantitative figures
 │   ├── download_cifar.m        # Automated CIFAR-10 downloader script
 │   ├── download_flowers.m      # Automated Oxford Flowers downloader script
 │   ├── main.m                  # Main execution script
